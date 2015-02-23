@@ -1,0 +1,17 @@
+{
+    "elements": {
+        "ul": {
+            "attributes": {
+                "class": {}
+            }
+        },
+        "li": {
+            "attributes": {
+                "class": {}
+            }
+        }
+    },
+    "attributes": {
+        "placeholder": {}
+    }
+}

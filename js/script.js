@@ -1,21 +1,18 @@
-$(document).ready(function () {
-            $(document).ready(function () {
-            $('#slider1').cycle({
-                fx: 'scrollHorz', // Here you can change the effect
-                speed: 'slow',
-                timeout: 0,
-                next: '#next',
-                prev: '#prev',
-                pager: '#thumb',
-                pagerAnchorBuilder: function (idx, slide) {
-                    return '<li><a href="#"><img src="' + slide.src + '" /></a></li>';
-                }
-            });
+$(document).ready(function() {
+
+        $('#slider1').cycle({
+            fx: 'scrollHorz', // Here you can change the effect
+            speed: 'slow',
+            timeout: 0,
+            next: '#next',
+            prev: '#prev',
+            pager: '#thumb',
+            pagerAnchorBuilder: function(idx, slide) {
+                return '<li><a href="#"><img src="' + slide.src + '" /></a></li>';
+            }
         });
-    $('.menu > .menu-item:has(ul) > a').click(function () {
-        $(this).siblings('ul').toggle();
     });
-    window.onload = function () {
+    window.onload = function() {
 
         function getScrollTop() {
             if (typeof window.pageYOffset !== 'undefined') {
@@ -33,7 +30,7 @@ $(document).ready(function () {
             return document.body.scrollTop;
         }
 
-        window.onscroll = function () {
+        window.onscroll = function() {
             var box = document.getElementById('sorting-list'),
                     scroll = getScrollTop();
 
@@ -51,16 +48,16 @@ $(document).ready(function () {
 
 
 
-    jQuery(document).ready(function () {
+    jQuery(document).ready(function() {
         $(".dropdown").hover(
-                function () {
+                function() {
                     $('.dropdown-menu', this).fadeIn("fast");
                 },
-                function () {
+                function() {
                     $('.dropdown-menu', this).fadeOut("fast");
                 });
     });
-    window.onload = function () {
+    window.onload = function() {
 
         function getScrollTop() {
             if (typeof window.pageYOffset !== 'undefined') {
@@ -78,7 +75,7 @@ $(document).ready(function () {
             return document.body.scrollTop;
         }
 
-        window.onscroll = function () {
+        window.onscroll = function() {
             var box = document.getElementById('sorting-list'),
                     scroll = getScrollTop();
 

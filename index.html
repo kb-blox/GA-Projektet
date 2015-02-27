@@ -6,11 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link type="text/css" rel="stylesheet" href="css/test.css">
-        <link type="text/css" rel="stylesheet" href="css/navtest.css">
         <link rel="icon" type="image/ico" href="img/favicon.ico">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-        
+
     </head>
     <body>
         <div id="wrapper">
@@ -68,21 +67,29 @@
                             </li>
 
                             <li><a href="contact.html">Contact</a></li>
-                            <li class="login"><a href="#">Registrate</a></li>
-                            <li class="login dropdown">
+                            <li class="login dropdown1">
 
-                                <a href="#" class="dropdown-toggle">Login<b class="caret"></b></a>                      
-                                <ul class="dropdown-menu login-menu droppdown">
-                                   
-                                        <form>
-                                            <h3 class="top user">Username:</h3> 
-                                            <input type="text" name="Username" value=""><br>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login | Signup<b class="caret"></b></a>                      
+                                <ul class="dropdown-menu login-menu droppdown1">
+                                    <div class="row"> 
+
+                                        <div class="col-sm-6 login">
+                                            <h2>Login</h2>
+                                            <h3 class="user">Username:</h3> 
+                                            <input type="text" name="FirstName" value="">
                                             <h3 class="user">Password:</h3>
-                                            <input type="text" name="Password" value=""><br>
-                                            <input class="send" type="submit" value="Login">
-                                        </form>
-
-                                       
+                                            <input type="text" name="LastName" value="">
+                                            <input class="send" type="submit" value="Submit">
+                                        </div>
+                                        <div class="col-sm-6 login">
+                                            <h2>Login</h2>
+                                            <h3 class="user">Username:</h3> 
+                                            <input type="text" name="FirstName" value="">
+                                            <h3 class="user">Password:</h3>
+                                            <input type="text" name="LastName" value="">
+                                            <input class="send" type="submit" value="Submit">
+                                        </div>
+                                    </div>
                                 </ul>
                             </li>
                         </div>
@@ -144,32 +151,32 @@
                 </div>
             </div>
             <div class="jumbotron backgroundfooter">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-4 footercontent">
-                            <h2>© 2014 Clothes Store </h2>
-                            <p>By David KB, Viktor RT <br>
-                                Albin S, Tony T</p>
-                        </div>
-                        <div class="col-sm-4 footercontent">
-                            <h2>Find us</h2>
-                            <p>Adress:</p>
-                            <p>City:</p>
-                            <p>Phone nr:</p>
-                        </div>
-                        <div class="col-sm-4 footercontent">
-                            <h2>Follow us</h2>
-                        </div>
+                <div class="container navbar">
+
+                    <div class="col-sm-4 footercontent">
+                        <h2>© 2014 Clothes Store </h2>
+                        <p>By David KB, Viktor RT <br>
+                            Albin S, Tony T</p>
                     </div>
+                    <div class="col-sm-4 footercontent">
+                        <h2>Find us</h2>
+                        <p>Adress:</p>
+                        <p>City:</p>
+                        <p>Phone nr:</p>
+                    </div>
+                    <div class="col-sm-4 footercontent">
+                        <h2>Follow us</h2>
+                    </div>
+
                 </div>
             </div>
             <script>
-                jQuery(document).ready(function () {
+                jQuery(document).ready(function() {
                     $(".dropdown").hover(
-                            function () {
+                            function() {
                                 $('.dropdown-menu', this).fadeIn("fast");
                             },
-                            function () {
+                            function() {
                                 $('.dropdown-menu', this).fadeOut("fast");
                             });
                 });

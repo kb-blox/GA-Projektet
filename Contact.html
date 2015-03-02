@@ -10,6 +10,7 @@
         <link rel="icon" type="image/ico" href="img/favicon.ico">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
     </head>
     <body>
         <div id="wrapper">
@@ -67,21 +68,33 @@
                             </li>
 
                             <li><a href="contact.html">Contact</a></li>
-                            <li class="login"><a href="#contact">Registrate</a></li>
-                            <li class="login dropdown">
+                            <li class="login LS-dropdown">
 
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<b class="caret"></b></a>                      
-                                <ul class="dropdown-menu login-menu droppdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login | Signup<b class="caret"></b></a>                      
+                                <ul class="dropdown-menu login-menu LS-droppdown">
+                                    <div class="row"> 
 
-                                    <form>
-                                        <h3 class="top user">Username:</h3> 
-                                        <input type="text" name="FirstName" value=""><br>
-                                        <h3 class="user">Password:</h3>
-                                        <input type="text" name="LastName" value=""><br>
-                                        <input class="send" type="submit" value="Login">
-                                    </form>
-
-
+                                        <div class="col-sm-6 login">
+                                            <form>
+                                                <h2>Login</h2>
+                                                <h3 class="user">Username:</h3> 
+                                                <input type="text" name="FirstName" value="">
+                                                <h3 class="user">Password:</h3>
+                                                <input type="text" name="LastName" value="">
+                                                <input class="send" type="submit" value="Submit">
+                                            </form>
+                                        </div>
+                                        <div class="col-sm-6 login">
+                                            <form>
+                                                <h2>Login</h2>
+                                                <h3 class="user">Username:</h3> 
+                                                <input type="text" name="FirstName" value="">
+                                                <h3 class="user">Password:</h3>
+                                                <input type="text" name="LastName" value="">
+                                                <input class="send" type="submit" value="Submit">
+                                            </form>
+                                        </div>
+                                    </div>
                                 </ul>
                             </li>
                         </div>
@@ -146,17 +159,7 @@
                    
                 </div>
             </div>
-            <script>
-                jQuery(document).ready(function () {
-                    $(".dropdown").hover(
-                            function () {
-                                $('.dropdown-menu', this).fadeIn("fast");
-                            },
-                            function () {
-                                $('.dropdown-menu', this).fadeOut("fast");
-                            });
-                });
-            </script>
+
         </div>
     </body>
 </html>

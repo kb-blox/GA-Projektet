@@ -435,8 +435,9 @@ input {
     text-align: center;
     text-decoration: none;
     margin: 20px;
+    width: 200px;
 }
-.köpknapp p{
+.köpknapp {
     text-decoration: none;
     border: solid black 1px;
     background-color: green;
@@ -450,7 +451,7 @@ input {
     transition: all 0.5s ease;
     padding: 10px;
 }
-.köpknapp:hover p{
+.köpknapp:hover{
 
     opacity: 1;
     background-color: red;
